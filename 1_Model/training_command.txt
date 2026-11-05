@@ -1,0 +1,5 @@
+chemprop train --data-path <input_path> --task-type classification --output-dir <dir> --split-type scaffold_balanced --data-seed <data_seed> --message-hidden-dim 200
+
+<input_path>: Path to dataset with SMILES in the first column and classification (0 or 1) in the second column 
+<output_dir>: Directory were the results should be saved
+<data-seed>: Seed for the random component used to split the data. We used 0, 1, 2, 3 and 4 (5 different models) 

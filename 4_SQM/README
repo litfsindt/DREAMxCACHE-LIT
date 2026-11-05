@@ -1,0 +1,12 @@
+Require Cuby4 & MOPAC
+
+Version : 
+Cuby Version4 : http://cuby4.molecular.cz/, Jan Řezáč, https://doi.org/10.1002/jcc.24312
+MOPAC 23.0.2 : https://openmopac.net/ Jonathan E. Moussa and James J. P. Stewar. https://doi.org/10.21105/joss.08025
+
+
+Run the following command for the receptor, the complex and the free conformation of the ligand :
+
+cuby4 cuby.in
+
+The score is the difference between Ecomplex - (Ereceptor + Eligand)

@@ -1,0 +1,20 @@
+#CUBY4 JOB PM6/COSMO2 - CORRECTED D3H4X
+
+#input
+geometry: input.xyz  #receptor.xyz, complex.xyz and Ligand.xyz
+
+# pm6/cosmo2 calculation
+job: energy
+interface: mopac
+method: pm6
+
+# solvent
+solvent_model: cosmo2
+charge: 0 # Charge of the system
+
+# exe of mopac
+mopac_exe: /opt/mopac/23.0.2/bin/mopac
+
+mopac_mozyme: yes
+mopac_corrections: d3h4x
+
