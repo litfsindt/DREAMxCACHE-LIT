@@ -1,0 +1,185 @@
+#/**********************************************************************
+#Copyright (C) 2000-2005 by OpenEye Scientific Software, Inc.
+#***********************************************************************/
+
+ALLOWED_ELEMENTS  H,C,N,O,F,S,Cl,Br,I,P
+ELIMINATE_METALS Sc,Ti,V,Cr,Mn,Fe,Co,Ni,Cu,Zn,Y,Zr,Nb,Mo,Tc,Ru,Rh,Pd,Ag,Cd
+
+#acceptable molecules must have <= instances of each of the patterns below
+
+#specific, undesirable functional groups
+
+RULE  0  quinone
+RULE  0  pentafluorophenyl_esters
+RULE  0  paranitrophenyl_esters
+RULE  0  HOBT_esters
+RULE  0  triflates
+RULE  0  lawesson_s_reagent
+RULE  0  phosphoramides
+RULE  0  beta_carbonyl_quat_nitrogen
+RULE  0  acylhydrazide
+RULE  0  cation_C_Cl_I_P_or_S
+RULE  0  phosphoryl
+RULE  0  alkyl_phosphate
+RULE  0  phosphinic_acid
+RULE  0  phosphanes
+RULE  0  phosphoranes
+RULE  0  imidoyl_chlorides
+RULE  0  nitroso
+RULE  0  N_P_S_Halides
+RULE  0  carbodiimide
+RULE  0  isonitrile
+RULE  0  triacyloxime
+RULE  0  cyanohydrins
+RULE  0  acyl_cyanides
+RULE  0  sulfonylnitrile
+RULE  0  phosphonylnitrile
+RULE  0  azocyanamides
+RULE  0  beta_azo_carbonyl
+RULE  0  polyenes
+RULE  0  saponin_derivatives
+RULE  0 cytochalasin_derivatives
+RULE  0  cycloheximide_derivatives
+RULE  0  monensin_derivatives
+RULE  0  squalestatin_derivatives
+
+#functional groups which often eliminate compounds from consideration
+
+RULE  0  acid_halide
+RULE  0  aldehyde
+RULE  0  alkyl_halide
+RULE  0  anhydride
+RULE  0  azide
+RULE  0  azo
+RULE  0  di_peptide
+RULE  0  michael_acceptor
+RULE  0  beta_halo_carbonyl
+RULE  0  nitro
+RULE  0  oxygen_cation
+RULE  0  peroxide
+RULE  0  phosphonic_acid
+RULE  0  phosphonic_ester
+RULE  0  phosphoric_acid
+RULE  0  phosphoric_ester
+RULE  0  sulfonic_acid
+RULE  0  sulfonic_ester
+RULE  0  tricarbo_phosphene
+RULE  0  epoxide
+RULE  0  sulfonyl_halide
+RULE  0  halopyrimidine
+RULE  0  perhalo_ketone
+RULE  0  aziridine
+RULE  1  oxalyl
+RULE  0  alphahalo_amine 
+RULE  0  halo_amine 
+RULE  0  halo_alkene
+RULE  0  acyclic_NCN
+RULE  0  acyclic_NS
+RULE  0  SCN2
+RULE  0  terminal_vinyl
+RULE  0  hetero_hetero
+RULE  0  hydrazine
+RULE  0  N_methoyl
+RULE  0  NS_beta_halothyl
+RULE  0  propiolactones
+RULE  0  iodoso
+RULE  0  iodoxy
+RULE  0  noxide
+
+
+#groups of molecules
+
+RULE  0  dye
+  
+#functional groups which are allowed, but may not be wanted in high quantities
+#common functional groups
+
+RULE  6  alcohol
+RULE  8  alkene
+RULE  4  amide
+RULE  4  amino_acid
+RULE  4  amine
+RULE  4  primary_amine
+RULE  4  secondary_amine
+RULE  4  tertiary_amine
+RULE  4  carboxylic_acid
+RULE  6  halide
+RULE  1  iodine
+RULE  4  ketone
+RULE  4  phenol
+RULE  2  imine
+RULE  1  methyl_ketone
+RULE  1  alkylaniline
+RULE  4  sulfonamide 
+RULE  1  sulfonylurea 
+RULE  0  phosphonamide 
+RULE  0  alphahalo_ketone
+RULE  0  oxaziridine
+RULE  1  cyclopropyl
+RULE  2  guanidine
+RULE  0  sulfonimine
+RULE  0  sulfinimine
+RULE  1  hydroxamic_acid
+RULE  0  sulfinylthio
+RULE  0  disulfide
+RULE  0  enol_ether
+RULE  0  enamine
+RULE  0  organometallic
+RULE  0  dithioacetal
+RULE  1  oxime
+RULE  0  isothiocyanate
+RULE  0  isocyanate
+RULE  3  lactone
+RULE  3  lactam
+RULE  1  thioester
+RULE  1  carbonate
+RULE  0  carbamic_acid
+RULE  1  thiocarbamate
+RULE  0  triazine
+RULE  1  malonic
+
+#other functional groups
+
+RULE  2  alkyne
+RULE  4  aniline
+RULE  4  aryl_halide
+RULE  4  carbamate
+RULE  4  ester
+RULE  4  ether
+RULE  1  hydrazone
+RULE  0  nonacylhydrazone
+RULE  1  hydroxylamine
+RULE  2  nitrile
+RULE  2  sulfide
+RULE  2  sulfone
+RULE  2  sulfoxide
+RULE  0  thiourea
+RULE  1  thioamide
+RULE  0  thiol
+RULE  2  urea
+
+RULE  0  hemiketal 
+RULE  0  hemiacetal
+RULE  0  ketal
+RULE  1  acetal
+RULE  0  aminal
+RULE  0  hemiaminal
+
+#protecting groups
+
+RULE  0  benzyloxycarbonyl_CBZ
+RULE  1  t_butoxycarbonyl_tBOC
+RULE  0  fluorenylmethoxycarbonyl_Fmoc
+RULE  1  dioxolane_5MR
+RULE  1  dioxane_6MR
+RULE  1  tetrahydropyran_THP
+RULE  1  methoxyethoxymethyl_MEM
+RULE  2  benzyl_ether
+RULE  2  t_butyl_ether
+RULE  0  trimethylsilyl_TMS
+RULE  0  t_butyldimethylsilyl_TBDMS
+RULE  0  triisopropylsilyl_TIPS
+RULE  0  t_butyldiphenylsilyl_TBDPS
+RULE  1  phthalimides_PHT
+RULE  2  arenesulfonyl
+
