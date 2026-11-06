@@ -9,7 +9,7 @@ This repository contains the workflow developed by **LIT-Team-SXB** for the PGK2
 Files related to the preparation of the input dataset used for model training :
 
 - `selecting_actives.py`: Python script used to filter the 7M putative active compounds according to the filtering rules provided by the challenge for the DEL dataset
-- `filter_PAINS_reactive_groups.txt`: OpenEye filter file used to remove PAINS and reactive functional groups from the selected active compounds (`actives.smi`)
+- `filter_PAINS_reactive_groups.txt`: OpenEye filter file used to remove PAINS and reactive functional groups from the selected active compounds from `selecting_actives.py` to create `actives.smi`
 - `selecting_inactives.sh`: Shell script used to launch the random inactive selection process, accounting for the size of each Parquet file and ensuring that selected compounds are not part of the 7M putative active set
 - `sample_random_opendel.py`: Python script used to randomly select inactive compounds, with sampling weighted according to the size of each Parquet file
 
